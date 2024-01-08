@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       *{
+        box-sizing:border-box;
+       }
+        .container{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        height:100vh;
+        gap:10px;
+       }
+       
+       .pricing-plan{
+            width:200px;
+            max-height:300px;
+            background-color:lightgray;
+            text-align:center;
+            padding:10px;       
+        }
+
+        .plan-features ul{
+           list-style-position: inside;
+           margin:1px;
+           padding:1px;
+        }
+       .button button{
+         background-color:orange;
+         color:white;
+         padding:5px;
+         border:none;
+         padding:4px 6px;
+         font-size:22px;
+         border-radius:10px;
+         }
+         @media(max-width:500px){
+            .container{
+               
+                flex-direction:column;
+
+            }
+         }
+     
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="pricing-plan">
+        <div class="plan-text">
+            <h1>Basic</h1>
+        </div>
+        <div class="plan-price"><h2>$ 9.99/month</h2></div>
+        <div class="plan-features">
+        <ul>
+            <li>storage</li>
+            <li>User</li>
+            <li>Support</li>
+        </ul>
+      </div>
+     
+        <div class="button">
+            <button>Sign-up</button>
+        </div>
+       </div>
+     
+        <div class="pricing-plan">
+        <div class="plan-text">
+            <h1>Standard</h1>
+        </div>
+        <div class="plan-price"><h2>$ 19.99/month</h2></div>
+        <div class="plan-features">
+        <ul>
+            <li>storage</li>
+            <li>User</li>
+            <li>Support</li>
+        </ul>
+        </div>
+        <div class="button">
+            <button>Sign-up</button>
+        </div>
+    </div>
+        <div class="pricing-plan">
+        <div class="plan-text">
+            <h1>Premium</h1>
+        </div>
+        <div class="plan-price"><h2>$ 29.99/month</h2></div>
+        <div class="plan-features">
+        <ul>
+            <li>storage</li>
+            <li>User</li>
+            <li>Support</li>
+        </ul>
+        </div>
+        <div class="button">
+            <button>Sign-up</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
